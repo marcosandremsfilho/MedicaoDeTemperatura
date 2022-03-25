@@ -20,7 +20,10 @@ void loop() {
 
   double temperatura = B/ log(RT/Rx); // Essa é a equação para converter a resistencia na temperatura que o sensor se encontra
 
-  Serial.print("Temperatura: ");
+  Serial.print("Temperatura em Kelvin: ");
+  Serial.print (temperatura); // Mostra a temperatura no terminal em Kelvin
+  Serial.println(" K");
+  Serial.print("Temperatura em Graus: ");
   Serial.print (temperatura - 273.0); // Mostra a temperatura no terminal subtraindo 273 para mostrar a temperatura em graus Celsius
   Serial.println(" ºC");
 }
